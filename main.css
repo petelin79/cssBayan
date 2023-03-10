@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: beige;
+
+}
+    
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0 0 5px;
+}
+
+.acc {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.acc:hover .acc-title-block .acc-status {
+    visibility:visible;
+    transition: .3s;
+}
+
+.acc:hover .acc-item .acc-title-block .acc-title{
+    color: black;
+}
+
+.acc-title {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    color:dodgerblue;
+}
+
+.acc-item:hover .acc-text  .acc-img{
+    width: 65%;
+    height: 65%;
+    transition: .2s ease-in-out;
+}
+
+.acc-item:hover .acc-status {
+    transform: none;
+    visibility: visible;
+}
+
+.acc-input {
+    width: 0;
+    height: 0;
+    appearance: none;
+
+    position: absolute;
+}
+
+.acc-title-block {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.acc-status {
+    background-image: url(./assets/img/1544641784.svg);
+    width: 24px;
+    height: 24px; 
+    /* background-color: black; */
+    transform: rotate(45deg);
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.acc-input:checked ~ .acc-text .acc-img{
+    width: 65%;
+    height: 65%;
+}
+.acc-input:checked ~ .acc-title-block .acc-status {
+    transform: none;
+}
+
+.acc-input:checked ~ .acc-title-block .acc-title {
+    color: black;
+}
+
+.acc-text {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.acc-img {
+    width: 0%;
+    height: 0%;
+    cursor: pointer;
+}
+
+.separator {   
+    border-style:solid;
+    border-bottom: 1px;
+    border-color: gray;
+    opacity: 0.2;
+}
+
+@media (max-width: 820px) {
+    .acc-title-block {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 320px) {
+    .acc-title-block {
+        font-size: 18px;
+    }
+}
+
