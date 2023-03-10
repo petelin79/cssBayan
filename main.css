@@ -79,6 +79,7 @@ p {
 
 .acc-input:checked ~ .acc-text .acc-img{
     width: 65%;
+    
     height: 65%;
 }
 .acc-input:checked ~ .acc-title-block .acc-status {
