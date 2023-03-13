@@ -4,7 +4,7 @@ body {
     background-color: beige;
 
 }
-    
+
 
 *,
 *:before,
@@ -70,18 +70,19 @@ p {
 .acc-status {
     background-image: url(./assets/img/1544641784.svg);
     width: 24px;
-    height: 24px; 
+    height: 24px;
     /* background-color: black; */
     transform: rotate(45deg);
     visibility: hidden;
     cursor: pointer;
 }
 
+
 .acc-input:checked ~ .acc-text .acc-img{
     width: 65%;
-
     height: 65%;
 }
+
 .acc-input:checked ~ .acc-title-block .acc-status {
     transform: none;
 }
@@ -103,7 +104,7 @@ p {
     cursor: pointer;
 }
 
-.separator {   
+.separator {
     border-style:solid;
     border-bottom: 1px;
     border-color: gray;
